@@ -1,0 +1,270 @@
+
+
+/*  Contact Wrapper  */
+
+.ContactWrapper {
+	font-size:14px;
+}
+.ContactLeft {
+	float:left;
+	display:block;
+	width:70%;
+}
+.ContactRight {
+	float:right;
+	display:block;
+	width:28%;
+}
+.ContactBox1 {
+	background:#f2f2f2;
+	border-bottom:5px solid #dadada;
+	padding:5%;
+}
+.ContactBox2 {
+	background:#f2f2f2;
+	border-bottom:5px solid #dadada;
+	padding:5%;
+	margin-bottom:25px;
+}
+
+.ContactPhone img {
+	float:left;
+	display:block;
+	width:15%;
+}
+.ContactPhoneRight {
+	float:left;
+	display:block;
+	width:80%;
+	margin-left:5%;
+}
+.ContactPhone h3 {
+	font-size:16px;
+	text-transform:uppercase;
+	margin-top:2px;
+}
+.ContactPhone h4 {
+	font-size:18px !important;
+	text-transform:uppercase;
+	margin-top:2px;
+}
+.ContactPhone h4 span {
+	font-size:13px !important;
+}
+
+.ContactPhone p {
+	margin-bottom:0px !important;
+	font-size:16px;
+}
+
+.GetConnected {
+	text-align:center;
+}
+
+
+/*  End  */
+
+/*   End   */
+
+.ContactInfo {
+	font-size:16px;
+	line-height:24px;
+	background:url(https://sanghvisons.com/siteassets/images/img/contact-pic.jpg) no-repeat right bottom;
+}
+.ContactInfo h3 {
+	font-family: 'latobold';
+    font-size: 22px;
+    line-height: 26px;
+    color: #00ccff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.ContactInfo h4 {
+	font-size:24px !important;
+	line-height:26px;
+    font-family: 'latobold';
+	color:#00ccff;
+	margin-bottom:5px;
+	text-transform:uppercase;
+}
+
+.ContactInfo h6 {
+	margin:8px 0px;
+	font-size:16px !important;
+	clear:both;
+	content: "";
+	display: table;
+	min-height:1px;
+}
+.ContactInfo h6 span {
+	text-transform:uppercase;
+    font-family:calibri, sans-serif;
+	font-weight:bold !important;
+	color:#00ccff;
+	font-size:14px;
+	margin-right:10px;
+	min-width:60px;
+	display:block;
+	float:left;
+}
+.ContactInfo p {
+	margin-bottom:10px;
+}
+
+.ContactInfoLeft {
+	float:left;
+	display:block;
+	width:46%;
+}
+.ContactInfoRight {
+	float:right;
+	display:block;
+	width:50%;
+}
+
+/*Contact Wrapper*/
+
+.ContactForm {
+	width:100%;
+	margin:0 auto;
+	font-size:16px;
+	color:#000;
+}
+.ContactForm p {
+	margin-bottom:5px !important;
+}
+
+.ContactForm span {
+	color:#00ccff;
+}
+.ContactForm input, .ContactForm textarea, .ContactForm select {
+	width:94%;
+	padding:14px 3%;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+	box-shadow:none;
+	margin-top:5px;
+	margin-bottom:12px;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.ContactForm input:hover, .ContactForm textarea:hover, .ContactForm select:hover {
+    border: 1px solid #00ccff;
+}
+
+.ContactForm input[type=text] {
+		padding:0px;
+}
+
+.InputWidth1 {
+	width:41% !important;
+	margin:0px 1%;
+}
+.ContactForm input[type=checkbox] {
+	width:20px;
+	padding:0px;
+}
+.ContactForm h6 {
+	font-family:'latobold';
+	font-size:20px !important;
+	margin-bottom:5px;
+}
+.ContactForm h3 {
+	font-weight:bold !important;
+	font-size:20px !important;
+	padding-bottom:15px;
+	border-bottom:2px solid #eee;
+	margin-bottom:25px;
+	text-transform:uppercase;
+	color:#00ccff;
+}
+
+.ContactFormLeft {
+	width:49%;
+	display:block;
+	float:left;
+}
+.ContactFormRight {
+	width:49%;
+	display:block;
+	float:right;
+}
+.MapBg  {
+	margin-bottom:15px;
+}
+.MapBg img, .MapBg iframe {
+	padding:2%;
+	width:96%;
+	background-color:#d8d8d8;
+}
+
+/*   End    */
+
+
+.BtnInput input {
+	display:block;
+	width:150px !important;
+	margin:0 auto;
+	background-color:#00ccff;
+	color:#fff;
+	padding:5px 10px;
+	font-size:15px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	line-height:32px;
+	letter-spacing:3;
+	border:none !important;
+}
+.BtnInput input:hover {
+	display:block;
+	background-color:#000;
+	color:#ffffff;
+}
+
+
+@media only screen and (max-width: 768px){
+	.ContactInfoLeft {
+		float:none;
+		width:100%;
+	}
+	.ContactInfoRight {
+		float:none;
+		width:100%;
+	}
+	.ContactInfo h3 {
+		font-size:18px !important;
+		line-height:22px;
+	}
+}
+
+@media only screen and (max-width: 524px){
+	
+	.ContactForm {
+		width:92%;
+	}
+	.ContactFormLeft {
+		width:100%;
+		display:block;
+		float:none;
+	}
+	.ContactFormRight {
+		width:100%;
+		display:block;
+		float:none;
+	}
+	.ChangePasswordWrapper {
+		width:100%;
+	}
+	.ChangePasswordLeft {
+		float:none;
+		width:100%;
+	}
+	.ChangePasswordRight {
+		float:none;
+		width:100%;
+	}
+	
+}

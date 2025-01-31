@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="siteassets/js/jquery.elevatezoom.js"></script>
+
+    <style>
+        /* Global Font Settings */
+        * {
+            font-family: Arial, sans-serif;
+            font-size: 16px; /* Uniform font size across all pages */
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            background: #7fd5f9;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px; /* Ensure same font size */
+        }
+
+        .social-icons a img {
+            width: 30px;
+            margin: 5px;
+        }
+
+        /* Full-width Copyright Bar */
+        .copyright-container {
+            width: 100%;
+            height: 60px;
+            font-size: 15px;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .side-menu a {
+            color: #fff !important;
+            font-size: 16px;
+        }
+
+        .cap1 {
+            text-transform: uppercase !important;
+            font-size: 16px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        a.iLink {
+            font-weight: bold !important;
+            text-decoration: underline !important;
+        }
+
+        .iLink:hover {
+            text-decoration: none !important;
+        }
+
+    </style>
+
+</head>
+<body>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="quick-links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div class="get-in-touch">
+                    <h2>Get In Touch</h2>
+                    <ul>
+                        <li><a href="tel:+912240309999">+91 6622358370</a></li>
+                        <li><a href="tel:+919326361716">+66-86-883-7700</a></li>
+                        <li><a href="mailto:abcd@tejanidiam.com">abcd@tejanidiam.com</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright Bar -->
+    <div class="copyright-container">
+        <p class="copyright">Copyright© <span id="current-year"></span> Tejani Diam (Thailand) All Rights Reserved</p>
+    </div>
+
+    <script>
+        // Auto Update Year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

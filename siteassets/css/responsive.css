@@ -1,0 +1,414 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width: 1920px){
+}
+
+@media only screen and (max-width: 1600px){
+	
+	.TopMainCol1 {
+		width:80%;
+	}
+	.TopMainCol2 {
+		width:20%;
+	}
+	
+	.FBIcon, .TwiIcon, .LinkdinIcon, .YoutuIcon {
+		width:30px;
+		height:30px;
+	}
+	.FBIcon a, .TwiIcon a, .LinkdinIcon a, .YoutuIcon a {
+		height:30px;
+		background-size:100%;
+	}
+
+
+
+
+.TopMainCol3 {
+		width:80%;
+	}
+	.TopMainCol4 {
+		width:20%;
+	}
+	
+	
+
+
+
+
+
+
+
+
+
+	
+}
+
+@media only screen and (max-width: 1440px){
+	
+	
+	body{
+		font-size:14px;
+		line-height:20px;
+	}	
+	
+	.TopSearch a img {
+		padding:10px;
+	}
+	
+	
+	
+	.TopMainCol2 img {
+		margin:8px 10px -7px 0;
+		width:28px;
+	}
+	.TopMainCol2 h4 {
+		font-size:14px;
+		line-height:20px;
+	}
+	.TopMainCol2 h4 span {
+		font-size:20px;
+	}
+	
+	
+	
+	.TopMainCol4 img {
+		margin:8px 10px -7px 0;
+		width:35px;
+	}
+	.TopMainCol4 h4 {
+		font-size:14px;
+		line-height:20px;
+	}
+	.TopMainCol4 h4 span {
+		font-size:20px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.OurStoryWrapper h3 {
+		font-size:20px;
+		line-height:24px;
+	}
+	
+	
+	.IdxProductBox h3 {
+		top:45%;
+		left:7%;
+		width:86%;
+		height:auto;
+		line-height:36px;
+		font-size:18px;
+		letter-spacing:1px;
+	}
+	.IdxProArrow {
+		position:absolute;
+		bottom:-20px;
+		left:41%;
+	}
+	.IdxProArrow img {
+		width:40px;
+	}
+	
+	.IdxMediaWrapper h3 {
+		font-size:22px;
+		line-height:24px;
+		margin-bottom:20px;
+	}
+	.IdxMediaLeft {
+		font-size:36px;
+		line-height:36px;
+	}
+	.IdxMediaLeft span {
+		font-size:12px;
+	}
+	.IdxMediaRight {
+		line-height:normal;
+	}
+	.IdxMediaRight h4 {
+		font-size:15px;
+		line-height:20px;
+	}
+	.IdxMediaRight p {
+		margin-bottom:10px;
+	}
+	
+	.BTN1, .BTN2 {
+		font-size:14px;
+		line-height:20px;
+	}
+	.BTN1 a span, .BTN2 a span {
+		padding:2px 10px;
+	}
+	
+	
+	.IdxDisJoinBox {
+		line-height:normal;
+	}
+	.IdxDisJoinBox p {
+		min-height:32vh;
+	}
+
+	#Arrowfix {
+		width:34px;
+		height:34px;
+	}
+	#Arrowfix span {
+		top:50%;
+		left:50%;
+		margin-left:-7px;
+		margin-top:-11px;
+		border:7px solid transparent;
+		border-bottom-color:#ffffff;
+	}
+	
+	
+	.FooterCol1 li {
+		line-height:24px;
+	}
+	
+	
+	
+}
+
+@media only screen and (max-width: 1280px){
+	
+	
+}
+
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1){
+
+}
+@media only screen and (max-width: 1100px) {
+	
+	.TopMainWrapper, .NavWrapper, .IdxProLogoWrapper, .OurStoryWrapper, .IdxProductWrapper, .IdxMediaWrapper, .IdxDisJoinWrapper, .Footer {
+		width:90%;
+	}
+	
+	.TopMainCol1 {
+		float:left;
+		display:block;
+		width:auto;
+	}
+	.TopMainCol2 {
+		width:auto;
+		float:right;
+	}
+	
+	
+	.TopMainCol3 {
+		float:left;
+		display:block;
+		width:100%;
+	}
+	.TopMainCol4 {
+		width:100%;
+		
+	}
+	
+	
+	
+	
+	
+	
+	.Nav {
+		display:none;
+	}
+	.TopSearch {
+		margin-right:5%;
+	}
+	.TopSearch a img {
+		padding:10px 10px 20px 10px;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	
+	.TopMainCol1 img {
+		width:350px;
+	}
+	
+	.TopMainCol3 img {
+		width:320px;
+	}
+	
+	
+}
+
+@media only screen and (max-width: 800px){
+	
+	.IdxProductBox {
+		width:48%;
+		margin:2% 1%;
+	}
+	.FooterCol1 {
+		float:none;
+		width:100%;
+		margin-bottom:20px;
+	}
+	.FooterCol2 {
+		width:50%;
+	}
+	.FooterCol3 {
+		width:50%;
+	}
+	
+	.margin200 {
+margin-left:4px;
+}
+	
+}
+
+@media only screen and (max-width: 700px){
+	
+	
+	
+}
+
+@media only screen and (max-width: 640px){
+	
+	.TopMainCol1 {
+		float:none;
+		display:block;
+		width:280px;
+		margin:0 auto;
+		margin-bottom:10px;
+	}
+	.TopMainCol1 img {
+		width:100%;
+	}
+	.TopMainCol2 {
+		width:210px;
+		float:none;
+		margin:0 auto;
+	}
+	.IdxProLogoWrapper {
+		padding:10px 0;
+	}
+	.IdxMediaCol1 {
+		float:none;
+		width:100%;
+	}
+	.IdxMediaCol2 {
+		float:none;
+		width:100%;
+		background:url(../images/dotted-line.png) repeat-x center;
+		background-repeat:repeat-x;
+	}
+	.IdxmediaHeight {
+		height:auto !important;
+		min-height:54px !important;
+	}
+	.FooterBottomLeft {
+		float:none;
+		width:100%;
+		text-align:center;
+		margin-bottom:10px;
+	}
+	.FooterBottomRight {
+		float:none;
+		width:100%;
+		text-align:center;
+	}
+	.TopSearch {
+		margin-right:15%;
+	}
+	.margin200 {
+margin-left:100px;
+}
+	
+}
+
+@media only screen and (max-width: 540px){
+	
+	.IdxProductBox {
+		float:none;
+		width:100%;
+		margin-bottom:30px;
+	}
+	.IdxDisJoinWrapper {
+		padding-top:40px;
+	}
+	.IdxDisJoinLeft {
+		float:none;
+		width:100%;
+		margin:0;
+		margin-bottom:20px;
+	}
+	.IdxDisJoinright {
+		float:none;
+		width:100%;
+		margin:0;
+	}
+	
+	.IdxDisJoinLeft1 {
+		float:none;
+		width:100%;
+		margin:0;
+		margin-bottom:20px;
+	}
+	.IdxDisJoinright1 {
+		float:none;
+		width:100%;
+		margin:0;
+	}
+	
+	
+	.IdxDisJoinLeft2 {
+		float:none;
+		width:100%;
+		margin:0;
+		margin-bottom:20px;
+	}
+	.IdxDisJoinright2 {
+		float:none;
+		width:100%;
+		margin:0;
+	}
+	
+	
+	
+	
+	
+	
+	.FooterCol2 {
+		float:none;
+		width:100%;
+		margin:20px auto;
+	}
+	.FooterCol3 {
+		float:none;
+		width:100%;
+	}
+	.FooterLi {
+		width:100% !important;
+		margin:0 auto;
+	}
+	.margin200 {
+margin-left:100px;
+}
+	
+}
+@media only screen and (max-width:480px){
+	
+	.TopMainCol1 {
+		width:86%;
+	}
+	.margin200 {
+margin-left:100px;
+}
+}

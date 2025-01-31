@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <!-- Include jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contactcardsec .cardofcontact, .biudbvf {
+                text-align: center;
+            }
+            .form-group input {
+                width: 100%;
+            }
+        }
+        
+        /* Footer and Diamond Stocks space */
+        .footer-space {
+            margin-top: 20px;
+        }
+        
+        /* Increased font size for email */
+        .email-link span {
+            font-size: 18px;
+        }
+
+        /* Adjusting the space between Footer and form */
+        .contactusformmine, .footer-space {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!--/menu-->
+    <div class="breadcrumbmine">
+        <div class="container breadcontainer">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title">Contact Us</h1>
+                    <ul class="breadcrumb justify-content-center">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="contactusformmine">
+        <div class="container">
+            <div class="row bgrowcontact">
+                <!-- Left section with the contact form -->
+                <div class="col-md-7 paddind-class1">
+                    <div class="startcontactsec">
+                        <h4>Send Us Message</h4>
+                        <div class="IdxProLinemine"></div>
+                        
+                        <form method="post" action="https://sanghvisons.com/contact">
+                            <div class="form-group">
+                                <input type="text" class="form-control required" id="name" placeholder="Enter Your Name" required name="Name" value="" tabindex="1">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control required" id="email" placeholder="Enter Email/Phone Number" required name="Email" value="" tabindex="3">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="Comment" placeholder="Enter Your Comments / Questions" required id="msg" class="form-control required" rows="4"></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <div class="g-recaptcha" data-sitekey="6Lf0DcUgAAAAAOG9bCLv4n60l4or2s9aS_eIn_Qk" data-callback="recaptcha_callback"></div><br>
+                                <button class="btn contactusbtnmine required" disabled type="submit" id="addsubmit" tabindex="7">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Right section with contact info -->
+                <div class="col-md-5 paddind-class1">
+                    <div class="contactaboutinfo">
+                        <h4>Contact Us</h4>
+                        <div class="IdxProLinemine"></div>
+                        <div class="contact-us">
+                            <div class="contact-us-icon">
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="contact-us-text">
+                                <a href="tel:+912240309999"><p>+91 66223 58370</p></a>
+                            </div>
+                        </div>
+                        <div class="contact-us">
+                            <div class="contact-us-icon">
+                                <span class="fas fa-mobile-alt"></span>
+                            </div>
+                            <div class="contact-us-text">
+                                <a href="tel:+919326361716"><p>+66-86-883-7700</p></a>
+                            </div>
+                        </div>
+                        <div class="contact-us email-link">
+                            <div class="contact-us-icon">
+                                <span class="fa fa-envelope"></span>
+                            </div>
+                            <div class="contact-us-text">
+                                <a href="mailto:tejanidiam@gmail.com"><p><span>tejanidiam@gmail.com</span></p></a>
+                            </div>
+                        </div>
+                        <!-- Added Text After Email -->
+                        <div class="contact-us-text">
+                            <p style="color: white;">We typically respond to customer e-mails within one business day. Send us your question in the form below, or send an E-mail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CSS for responsiveness and improvements -->
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .bgrowcontact {
+            margin-top: 30px;
+        }
+    
+        .startcontactsec h4 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+        .IdxProLinemine {
+            width: 50px;
+            height: 3px;
+            background-color: #000;
+            margin-top: 10px;
+        }
+    
+        .contact-us-icon {
+            font-size: 24px;
+            color: #333;
+        }
+    
+        .contact-us-text a p {
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+        }
+    
+        .contact-us-text p {
+            font-size: 16px;
+            color: white; /* Changed to white */
+        }
+    
+        .form-group input,
+        .form-group textarea {
+            border-radius: 5px;
+            padding: 12px;
+            font-size: 16px;
+        }
+    
+        .contactusbtnmine {
+            background-color: #000;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .contactusbtnmine:enabled {
+            cursor: pointer;
+        }
+    
+        .contactusbtnmine:disabled {
+            cursor: not-allowed;
+        }
+    
+        .contactusbtnmine:hover {
+            background-color: #444;
+        }
+    
+        @media (max-width: 768px) {
+            .col-md-7, .col-md-5 {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+    
+            .contact-us-text p {
+                font-size: 14px;
+            }
+    
+            .form-group input,
+            .form-group textarea {
+                font-size: 14px;
+            }
+    
+            .contactusbtnmine {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .startcontactsec h4 {
+                font-size: 20px;
+            }
+    
+            .contact-us-text a p {
+                font-size: 14px;
+            }
+    
+            .contactusbtnmine {
+                font-size: 14px;
+            }
+        }
+    </style>
+    
+
+    <section class="contactcardsec">
+        <div class="container">
+            <h4 class="mainhu">Contact Address</h4>
+            <div class="row justify-content-center"> <!-- Cards ko center align kiya gaya -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="cardofcontact">
+                        <h5 class="text-left">Mumbai Corporate Office</h5>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i><span>EC-7070, Center Core, E-Tower, Bharat Diamond Bourse, Bandra Kurla Complex, Bandra (East), Mumbai-400 051, India.</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Tel: +91 22 4030 9999</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Rapnet: 52372</span></li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <span class="email-text">
+                                    E-mail: <a href="mailto:info@sanghvisons.com" class="email-link">tejani@diem.com</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="cardofcontact">
+                        <h5 class="text-left">Surat Factory</h5>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i><span>7/4155, Sundar Sadan, Suthar Falia, Galemandi, Surat - 395003</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Phone : +91 - 261 - 2420033, 2420055</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CSS -->
+    <style>
+        .email-text {
+            font-size: 16px; /* Font size for email */
+            font-weight: bold;
+            color: #000; /* Black color */
+        }
+    
+        .email-link {
+            font-size: 16px; /* Font size for email link */
+            color: #000; /* Black color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        .email-link:hover {
+            text-decoration: underline; /* Underline effect on hover */
+        }
+    </style>
+    
+
+    <section class="contactinquiry">
+        <div class="biudbvf">
+            <form id="homeinquiryform" method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="byucgdb_ncuidm">
+                            <h4>Get Latest Diamond Stocks Updated Regularly.</h4>
+                            <p>Fill Up This Form</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 cudsbcdshb_colcdiud skdfhi">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" name="name">
+                        </div>
+                    </div>
+                    <div class="col-md-3 skdfhi">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Email / Phone Number" name="phone">
+                        </div>
+                    </div>
+                    <div class="col-md-2 skdfhi">
+                        <div class="form-group">
+                            <button class="btn btn-inquiry" type="button" id="huibsghggg_bcudvs">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-md-8 text-center skdfhi1">
+                        <p class="errroebcdsgsd h3"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="footer-space"></div>
+    <div id="footer"></div>
+
+    <script>
+        // jQuery code to load header and footer content
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+        // reCaptcha Callback
+        function recaptcha_callback() {
+            $('.contactusbtnmine').prop("disabled", false);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,625 @@
+.hareshactive {
+
+
+    background-color: orange;
+
+
+    color: white;
+
+
+    text-align: center;
+
+
+}
+
+
+
+
+
+/* The Modal (background) */
+
+
+.modal {
+
+
+    display: none;
+    /* Hidden by default */
+
+
+    position: fixed;
+    /* Stay in place */
+
+
+    z-index: 10;
+    /* Sit on top */
+
+
+    padding-top: 120px;
+    /* Location of the box */
+
+
+    left: 0;
+
+
+    top: 0;
+
+
+    width: 100%;
+    /* Full width */
+
+
+    height: 100%;
+    /* Full height */
+
+
+    overflow: auto;
+    /* Enable scroll if needed */
+
+
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+
+
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+
+
+}
+
+
+
+
+
+/* Modal Content */
+
+
+.modal-content {
+
+
+    background-color: #fefefe;
+
+
+    margin: auto;
+
+
+    padding: 20px;
+
+
+
+
+
+    width: 45%;
+
+
+}
+
+
+
+
+
+/* The Close Button */
+
+
+.close {
+
+
+    color: #000000;
+
+
+    float: right;
+
+
+    font-size: 28px;
+
+
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+.close:hover,
+
+
+.close:focus {
+
+
+    color: #000;
+
+
+    text-decoration: none;
+
+
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+
+
+.modal1 {
+
+
+    display: none;
+    /* Hidden by default */
+
+
+    position: fixed;
+    /* Stay in place */
+
+
+    z-index: 10000000;
+    /* Sit on top */
+
+
+    padding-top: 120px;
+    /* Location of the box */
+
+
+    left: 0;
+
+
+    top: 0;
+
+
+    width: 100%;
+    /* Full width */
+
+
+    height: 100%;
+    /* Full height */
+
+
+    overflow: auto;
+    /* Enable scroll if needed */
+
+
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+
+
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+
+
+}
+
+
+
+
+
+/* Modal Content */
+
+
+.modal-content1 {
+
+
+    background-color: #fefefe;
+
+
+    margin: auto;
+
+
+    padding: 20px;
+
+
+    border: 1px solid #888;
+
+
+    width: 75%;
+
+
+}
+
+
+
+
+
+/* The Close Button */
+
+
+.close1 {
+
+
+    color: #aaaaaa;
+
+
+    float: right;
+
+
+    font-size: 28px;
+
+
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+.close1:hover,
+
+
+.close1:focus {
+
+
+    color: #000;
+
+
+    text-decoration: none;
+
+
+    cursor: pointer;
+
+
+}
+
+
+.bs-example {
+
+
+    margin: 20px;
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+.modal {
+
+
+    position: fixed;
+
+
+    right: o;
+
+
+    top: 0px;
+
+
+}
+
+
+.modal-header,
+
+
+.btn-custom {
+
+
+    background: #72c2d0;
+
+
+    color: #FFF;
+
+
+    /* margin-right: 10px; */
+
+
+}
+
+
+.modal-body {
+
+
+    background: #fff;
+
+
+}
+
+
+.popover {
+
+
+    background-color: #e74c3c;
+
+
+    color: #ecf0f1;
+
+
+    width: 120px;
+
+
+}
+
+
+.popover.right .arrow:after {
+
+
+    border-right-color: #e74c3c;
+
+
+}
+
+
+.input-group[class*="col-"] {
+
+
+    padding-right: 15px;
+
+
+    padding-left: 15px;
+
+
+}
+
+
+
+
+
+a:hover,
+a:active,
+a:focus {
+
+
+    outline: none !important;
+
+
+}
+
+
+
+
+
+* {
+
+
+    outline: none !important;
+
+
+}
+
+
+
+
+
+img {
+
+
+    text-decoration: none !important;
+
+
+    border: 0px !important;
+
+
+}
+
+
+
+
+
+a,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+
+
+    border: none !important;
+
+
+}
+
+
+body,
+.row .content {
+
+
+    overflow-x: hidden !important;
+
+
+}
+
+
+input[type="text"],
+input[type="password"] {
+
+
+    color: #000 !important;
+
+
+}
+
+
+/*
+
+
+ul li {
+
+
+    background-position: 5px 10px  !important;
+
+
+    background-repeat: no-repeat !important;
+
+
+    margin: 0 0 5px !important;
+
+
+    padding: 0 0 0 20px !important;
+
+
+}*/
+
+
+
+
+
+ul li {
+
+
+    background-position: 5px 10px !important;
+
+
+    background-repeat: no-repeat !important;
+
+
+    margin: 0 0 5px !important;
+
+
+    padding: 0 0 0 24px !important;
+
+
+    font-size: 13px;
+
+
+}
+
+
+
+
+
+/* The Modal (background) */
+
+
+.modal5 {
+
+
+    display: none;
+    /* Hidden by default */
+
+
+    position: fixed;
+    /* Stay in place */
+
+
+    z-index: 10;
+    /* Sit on top */
+
+
+    padding-top: 120px;
+    /* Location of the box */
+
+
+    left: 100px;
+
+
+    top: 0;
+
+
+    width: 75%;
+    /* Full width */
+
+
+    height: 100%;
+    /* Full height */
+
+
+    overflow: auto;
+    /* Enable scroll if needed */
+
+
+
+
+
+}
+
+
+
+
+
+/* Modal Content */
+
+
+.modal-content5 {
+
+
+    background-color: #fefefe;
+
+
+    margin: auto;
+
+
+    padding: 20px;
+
+
+
+
+
+    width: 45%;
+
+
+}
+
+
+
+
+
+/* The Close Button */
+
+
+.close5 {
+
+
+    color: #aaaaaa;
+
+
+    float: right;
+
+
+    font-size: 28px;
+
+
+    font-weight: bold;
+
+
+}
+
+
+
+
+
+.close5:hover,
+
+
+.close5:focus {
+
+
+    color: #fff;
+
+
+    text-decoration: none;
+
+
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+div.dataTables_wrapper {
+
+
+    width: 100%;
+
+
+    margin: 0 auto;
+
+
+}

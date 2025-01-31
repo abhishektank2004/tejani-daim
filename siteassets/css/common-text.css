@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'gothamboldregular';
+    src: url('../fonts/gothambold_2-webfont.eot');
+    src: url('../fonts/gothambold_2-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'),
+         url('../fonts/gothambold_2-webfont.woff2') format('woff2'),
+         url('../fonts/gothambold_2-webfont.woff') format('woff'),
+         url('../fonts/gothambold_2-webfont.ttf') format('truetype'),
+         url('../fonts/gothambold_2-webfont.svg#gothamboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('../fonts/gotham-light1-webfont.eot');
+    src: url('../fonts/gotham-light1-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-light1-webfont.woff2') format('woff2'),
+         url('../fonts/gotham-light1-webfont.woff') format('woff'),
+         url('../fonts/gotham-light1-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-light1-webfont.svg#gotham_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('../fonts/ufonts.com_gotham-book-webfont.eot');
+    src: url('../fonts/ufonts.com_gotham-book-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_gotham-book-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts.com_gotham-book-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/ufonts.com_gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('../fonts/gotham-medium_1-webfont.eot');
+    src: url('../fonts/gotham-medium_1-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-medium_1-webfont.woff2') format('woff2'),
+         url('../fonts/gotham-medium_1-webfont.woff') format('woff'),
+         url('../fonts/gotham-medium_1-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-medium_1-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gothamexlightregular';
+    src: url('../fonts/gothamexlight-webfont.eot');
+    src: url('../fonts/gothamexlight-webfont%EF%B9%96.eot#iefix') format('embedded-opentype'),
+         url('../fonts/gothamexlight-webfont.woff2') format('woff2'),
+         url('../fonts/gothamexlight-webfont.woff') format('woff'),
+         url('../fonts/gothamexlight-webfont.ttf') format('truetype'),
+         url('../fonts/gothamexlight-webfont.svg#gothamexlightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.FGothamBold {
+font-family : 'gothamboldregular';
+}
+.FGothamLight {
+font-family : 'gotham_lightregular';
+}
+.FGothamEXLight {
+font-family : 'gothamexlightregular';
+}
+.FGothamBook {
+font-family : 'gotham_bookregular';
+}
+.FGothamMedium {
+font-family : 'gotham_mediumregular';
+}
+
+
+
+/*----*/
+img {
+	border:0px;
+}
+a {
+	color:#5a5a5a;
+	text-decoration:none;
+	cursor:pointer !important;
+}
+a:hover {
+	text-decoration:none;
+	color:#40b5cb;
+}
+
+* :focus {
+  outline: none;
+}
+.IMGPER img {
+	width:100% !important;
+	margin-bottom:-7px;
+}
+
+/*-----*/
+
+/*-----------------For All Default Bullets--------------------*/
+
+ul {
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}	
+ul li	{
+	background-position: 5px 10px;
+	background-repeat: no-repeat;
+	margin:0px 0px 5px 0px;
+	padding:0px 0px 0px 20px;
+}
+
+.NoBullet li {
+	background-image:none !important;
+	background-position:0px !important;
+	background-repeat: no-repeat !important;
+	margin:0px !important;
+	padding:0px !important;
+}
+
+
+/*---------*/
+::selection {
+	color:#fff;
+	background-color:#000;
+}
+::-moz-selection {
+	color:#fff;
+	background-color:#000;
+}
+::-webkit-selection {
+	color:#fff;
+	background-color:#000;
+}
+
+
+/*-------For Font Size Custmize----------*/
+
+.TAC {
+	text-align:center;
+}
+.TAL {
+	text-align:left;
+}
+.TAR {
+	text-align:right;
+}
+.TextColor1 {
+	color:#ff6c0c;
+}
+.BgColor1 {
+	background:#40b5cb;
+}
+/*---*/
+
+
+.BTN1 {
+    font-family: 'gotham_mediumregular';
+	font-size:16px;
+	line-height:24px;
+}
+.BTN1 a {
+	color:#5a5a5a;
+}
+.BTN1 a:hover {
+	color:#40b5cb;
+}
+.BTN1 a span {
+	background:url(../images/btn-arrow1.png) no-repeat center top;
+	padding:3.5px 12.5px;
+	margin-left:10px;
+	background-size:100%;
+}
+.BTN1 a:hover span {
+	background:url(../images/btn-arrow2.png) no-repeat center top;
+	background-size:100%;
+}
+
+.BTN2 {
+    font-family: 'gotham_mediumregular';
+	font-size:16px;
+	line-height:24px;
+}
+.BTN2 a {
+	color:#fff;
+}
+.BTN2 a:hover {
+	color:#000;
+}
+.BTN2 a span {
+	background:url(https://sanghvisons.com/siteassets/images/btn-arrow3.png) no-repeat center top;
+	padding:3.5px 12.5px;
+	margin-left:10px;
+	background-size:100%;
+}
+.BTN2 a:hover span {
+	background:url(https://sanghvisons.com/siteassets/images/btn-arrow4.png) no-repeat center top;
+	background-size:100%;
+}
+
+/*  Social Wrapperr */
+
+.FooterSocial {
+	margin-top:15px;
+}
+.FBIcon {
+	display:block;
+	float:left;
+	width:46px;
+	height:46px;
+}
+.FBIcon a {
+	display:block;
+	background-image:url(../images/icon/fb.png) !important;
+	background-repeat:no-repeat;
+	background-position:top;
+	height:46px;
+	text-indent:-99999px;
+}
+.FBIcon a:hover {
+	background-position:bottom;
+}
+.TwiIcon {
+	display:block;
+	float:left;
+	width:46px;
+	height:46px;
+	margin:0 4%;
+}
+.TwiIcon a {
+	display:block;
+	background-image:url(../images/icon/tw.png) !important;
+	background-repeat:no-repeat;
+	background-position:top;
+	height:46px;
+	text-indent:-99999px;
+}
+.TwiIcon a:hover {
+	background-position:bottom;
+}
+.LinkdinIcon {
+	display:block;
+	float:left;
+	width:46px;
+	height:46px;
+	margin-right:4%;
+}
+.LinkdinIcon a {
+	display:block;
+	background-image:url(../images/icon/link.png) !important;
+	background-repeat:no-repeat;
+	background-position:top;
+	height:46px;
+	text-indent:-99999px;
+}
+.LinkdinIcon a:hover {
+	background-position:bottom;
+}
+.YoutuIcon {
+	display:block;
+	float:left;
+	width:46px;
+	height:46px;
+}
+.YoutuIcon a {
+	display:block;
+	background-image:url(../images/icon/youtube.png) !important;
+	background-repeat:no-repeat;
+	background-position:top;
+	height:46px;
+	text-indent:-99999px;
+}
+.YoutuIcon a:hover {
+	background-position:bottom;
+}
+
+/*  End  */
+
+/*--------------*/
+
+#Arrowfix {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+	z-index:9999 !important;
+    background-color:#40b5cb;
+    text-indent:-9999px;
+    /*display:none;*/
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#Arrowfix span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+#Arrowfix:hover {
+    background-color:#045e6f;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+.loader {
+	display:none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../images/redloading.gif') 50% 50% no-repeat rgb(249,249,249);
+}

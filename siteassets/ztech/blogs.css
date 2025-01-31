@@ -1,0 +1,39 @@
+body h1.page-title.h3{
+    font-size: 32px;
+}
+body .blogview_section .blogcontent h2{
+    font-size: 26px;
+}
+body .blogview_section .blogcontent h3{
+    font-size: 22px;
+}
+body .blogview_section .blogcontent h4{
+    font-size: 20px;
+}
+table.blog-tbl, td, th {
+    border: 1px solid;
+  }
+  
+  table.blog-tbl {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .blog-tbl th,td{
+    border: 1px solid #444;
+    vertical-align: top !important;
+    padding: 10px 7px !important;
+    /* font-size: 13px !important; */
+    text-align: justify;
+    font-weight: normal !important;
+    line-height: 1.1 !important;
+  }
+
+  th.tbl-heading{
+    background-color: #035b6c;
+    color: #ffffff;
+  }
+
+  .blog-tbl tr{
+    border: 1px solid #444;
+  }
