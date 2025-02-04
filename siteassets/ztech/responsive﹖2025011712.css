@@ -472,23 +472,10 @@
         flex: 0 0 100%;
         order: 2;
     }
-    /* .openmobilemenu {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 12px;
-    }
-    .openmobilemenu .mobilemenubtn {
-        width: 40px;
-        background: transparent;
-        border: none;
-    }
-    .openmobilemenu .mobilemenubtn img {
-        max-width: 100%;
-    } */
     .breadcrumbmine {
         height: 120px;
-        background-position: right;
+        background-position: left;
+        background-size: 130px 150px;
     }
     .breadcontainer .page-title {
         font-size: 24px;

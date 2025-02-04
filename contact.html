@@ -3,33 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery Example</title>
+    <title>Contact Page</title>
     <!-- Include jQuery from a CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .contactcardsec .cardofcontact, .biudbvf {
-                text-align: center;
-            }
-            .form-group input {
-                width: 100%;
-            }
-        }
-        
-        /* Footer and Diamond Stocks space */
-        .footer-space {
-            margin-top: 20px;
-        }
-        
-        /* Increased font size for email */
-        .email-link span {
-            font-size: 18px;
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
         }
 
-        /* Adjusting the space between Footer and form */
-        .contactusformmine, .footer-space {
+        h1, h4, h5 {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Breadcrumb Styles */
+        .breadcrumbmine {
+            background-color: #ecf0f1;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .breadcrumbmine .page-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .breadcrumbmine .breadcrumb {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumbmine .breadcrumb li {
+            display: inline;
+            font-size: 16px;
+        }
+
+        .breadcrumbmine .breadcrumb li.current {
+            color: #3498db;
+        }
+
+        /* Contact Form Section */
+        .contactusformmine {
             margin-bottom: 40px;
+        }
+
+        .bgrowcontact {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .startcontactsec h4, .contactaboutinfo h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .contactusbtnmine {
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contactusbtnmine:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        .contactusbtnmine:hover:enabled {
+            background-color: #2980b9;
+        }
+
+        /* Contact Info Section */
+        .contactaboutinfo {
+            background-color: #2c3e50;
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .contact-us {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-us-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #3498db;
+        }
+
+        .contact-us-text p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .email-link span {
+            font-size: 18px;
+            color: #3498db;
+        }
+
+        /* Contact Cards Section */
+        .contactcardsec {
+            margin-top: 40px;
+        }
+
+        .cardofcontact {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .cardofcontact h5 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .cardofcontact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cardofcontact ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .cardofcontact ul li i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+
+        /* Inquiry Section */
+        .contactinquiry {
+            background-color: #3498db;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .biudbvf h4 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .biudbvf p {
+            color: #ecf0f1;
+            font-size: 16px;
+        }
+
+        .btn-inquiry {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-inquiry:hover {
+            background-color: #34495e;
+        }
+
+        /* Footer Space */
+        .footer-space {
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .breadcrumbmine .page-title {
+                font-size: 24px;
+            }
+
+            .startcontactsec h4, .contactaboutinfo h4 {
+                font-size: 20px;
+            }
+
+            .contact-us-text p {
+                font-size: 14px;
+            }
+
+            .form-group input, .form-group textarea {
+                font-size: 14px;
+            }
+
+            .contactusbtnmine, .btn-inquiry {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
         }
     </style>
 </head>
@@ -37,9 +245,9 @@
     <!-- Include Header -->
     <div id="header"></div>
 
-    <!--/menu-->
+    <!-- Breadcrumb Section -->
     <div class="breadcrumbmine">
-        <div class="container breadcontainer">
+        <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                     <h1 class="page-title">Contact Us</h1>
@@ -51,234 +259,131 @@
             </div>
         </div>
     </div>
-    
+
+    <!-- Contact Form Section -->
     <section class="contactusformmine">
         <div class="container">
             <div class="row bgrowcontact">
-                <!-- Left section with the contact form -->
-                <div class="col-md-7 paddind-class1">
+                <!-- Left Section: Contact Form -->
+                <div class="col-md-7">
                     <div class="startcontactsec">
-                        <h4>Send Us Message</h4>
-                        <div class="IdxProLinemine"></div>
-                        
+                        <h4>Send Us a Message</h4>
                         <form method="post" action="https://sanghvisons.com/contact">
                             <div class="form-group">
-                                <input type="text" class="form-control required" id="name" placeholder="Enter Your Name" required name="Name" value="" tabindex="1">
+                                <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required name="Name">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control required" id="email" placeholder="Enter Email/Phone Number" required name="Email" value="" tabindex="3">
+                                <input type="text" class="form-control" id="email" placeholder="Enter Email / Phone Number" required name="Email">
                             </div>
                             <div class="form-group">
-                                <textarea name="Comment" placeholder="Enter Your Comments / Questions" required id="msg" class="form-control required" rows="4"></textarea>
+                                <textarea name="Comment" placeholder="Enter Your Comments / Questions" required id="msg" class="form-control" rows="4"></textarea>
                             </div>
                             <div class="form-group text-center">
                                 <div class="g-recaptcha" data-sitekey="6Lf0DcUgAAAAAOG9bCLv4n60l4or2s9aS_eIn_Qk" data-callback="recaptcha_callback"></div><br>
-                                <button class="btn contactusbtnmine required" disabled type="submit" id="addsubmit" tabindex="7">Submit</button>
+                                <button class="btn contactusbtnmine" disabled type="submit" id="addsubmit">Submit</button>
                             </div>
                         </form>
                     </div>
                 </div>
-    
-                <!-- Right section with contact info -->
-                <div class="col-md-5 paddind-class1">
+
+                <!-- Right Section: Contact Info -->
+                <div class="col-md-5">
                     <div class="contactaboutinfo">
                         <h4>Contact Us</h4>
-                        <div class="IdxProLinemine"></div>
                         <div class="contact-us">
                             <div class="contact-us-icon">
-                                <span class="fa fa-phone"></span>
+                                <i class="fas fa-mobile-alt"></i>
                             </div>
                             <div class="contact-us-text">
-                                <a href="tel:+912240309999"><p>+91 66223 58370</p></a>
+                                <p>+66-86-883-7700</p>
                             </div>
                         </div>
+                        
                         <div class="contact-us">
                             <div class="contact-us-icon">
-                                <span class="fas fa-mobile-alt"></span>
+                                <i class="fas fa-phone"></i>
                             </div>
                             <div class="contact-us-text">
-                                <a href="tel:+919326361716"><p>+66-86-883-7700</p></a>
+                                <p>+91 66223 58370</p>
                             </div>
                         </div>
+                        
                         <div class="contact-us email-link">
                             <div class="contact-us-icon">
-                                <span class="fa fa-envelope"></span>
+                                <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-us-text">
-                                <a href="mailto:tejanidiam@gmail.com"><p><span>tejanidiam@gmail.com</span></p></a>
+                                <p>tejanidiam@gmail.com</p>
                             </div>
                         </div>
-                        <!-- Added Text After Email -->
-                        <div class="contact-us-text">
-                            <p style="color: white;">We typically respond to customer e-mails within one business day. Send us your question in the form below, or send an E-mail.</p>
+                        
                         </div>
+                        <div class="contact-us-text">
+                            <p style="color: white; font-size: 18.5px;">We typically respond to customer e-mails within one business day. Send us your question in the form below, or send an E-mail.</p>
+                        </div>   
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- CSS for responsiveness and improvements -->
-    <style>
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-    
-        .bgrowcontact {
-            margin-top: 30px;
-        }
-    
-        .startcontactsec h4 {
-            font-size: 24px;
-            font-weight: bold;
-        }
-    
-        .IdxProLinemine {
-            width: 50px;
-            height: 3px;
-            background-color: #000;
-            margin-top: 10px;
-        }
-    
-        .contact-us-icon {
-            font-size: 24px;
-            color: #333;
-        }
-    
-        .contact-us-text a p {
-            font-size: 16px;
-            color: #333;
-            text-decoration: none;
-        }
-    
-        .contact-us-text p {
-            font-size: 16px;
-            color: white; /* Changed to white */
-        }
-    
-        .form-group input,
-        .form-group textarea {
-            border-radius: 5px;
-            padding: 12px;
-            font-size: 16px;
-        }
-    
-        .contactusbtnmine {
-            background-color: #000;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            font-size: 18px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-    
-        .contactusbtnmine:enabled {
-            cursor: pointer;
-        }
-    
-        .contactusbtnmine:disabled {
-            cursor: not-allowed;
-        }
-    
-        .contactusbtnmine:hover {
-            background-color: #444;
-        }
-    
-        @media (max-width: 768px) {
-            .col-md-7, .col-md-5 {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-    
-            .contact-us-text p {
-                font-size: 14px;
-            }
-    
-            .form-group input,
-            .form-group textarea {
-                font-size: 14px;
-            }
-    
-            .contactusbtnmine {
-                font-size: 16px;
-                padding: 10px 15px;
-            }
-        }
-    
-        @media (max-width: 480px) {
-            .startcontactsec h4 {
-                font-size: 20px;
-            }
-    
-            .contact-us-text a p {
-                font-size: 14px;
-            }
-    
-            .contactusbtnmine {
-                font-size: 14px;
-            }
-        }
-    </style>
-    
 
+    <!-- Contact Cards Section -->
     <section class="contactcardsec">
         <div class="container">
             <h4 class="mainhu">Contact Address</h4>
-            <div class="row justify-content-center"> <!-- Cards ko center align kiya gaya -->
+            <div class="row justify-content-center">
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="cardofcontact">
-                        <h5 class="text-left">Mumbai Corporate Office</h5>
+                        <h5>Mumbai Corporate Office</h5>
                         <ul>
                             <li><i class="fas fa-angle-right"></i><span>EC-7070, Center Core, E-Tower, Bharat Diamond Bourse, Bandra Kurla Complex, Bandra (East), Mumbai-400 051, India.</span></li>
                             <li><i class="fas fa-angle-right"></i><span>Tel: +91 22 4030 9999</span></li>
                             <li><i class="fas fa-angle-right"></i><span>Rapnet: 52372</span></li>
-                            <li>
-                                <i class="fas fa-angle-right"></i>
-                                <span class="email-text">
-                                    E-mail: <a href="mailto:info@sanghvisons.com" class="email-link">tejani@diem.com</a>
-                                </span>
-                            </li>
+                            <li><i class="fas fa-angle-right"></i><span>E-mail:tejani@diem.com</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="cardofcontact">
-                        <h5 class="text-left">Surat Factory</h5>
+                        <h5>Surat Factory</h5>
                         <ul>
                             <li><i class="fas fa-angle-right"></i><span>7/4155, Sundar Sadan, Suthar Falia, Galemandi, Surat - 395003</span></li>
                             <li><i class="fas fa-angle-right"></i><span>Phone : +91 - 261 - 2420033, 2420055</span></li>
                         </ul>
                     </div>
                 </div>
+                <!-- Third Contact Card -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="cardofcontact">
+                        <h5>Delhi Branch</h5>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i><span>Plot 5, Sector 15, Rohini, New Delhi-110085, India.</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Tel: +91 11 2777 8888</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>Fax: +91 11 2777 8899</span></li>
+                            <li><i class="fas fa-angle-right"></i><span>E-mail: delhi@company.com</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- CSS -->
-    <style>
-        .email-text {
-            font-size: 16px; /* Font size for email */
-            font-weight: bold;
-            color: #000; /* Black color */
-        }
-    
-        .email-link {
-            font-size: 16px; /* Font size for email link */
-            color: #000; /* Black color */
-            text-decoration: none;
-            font-weight: bold;
-        }
-    
-        .email-link:hover {
-            text-decoration: underline; /* Underline effect on hover */
-        }
-    </style>
-    
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Find Us Here</h1>
+        <div class="map-container" style="width: 100%; height: 400px; border: 2px solid #ccc; border-radius: 8px; overflow: hidden;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7546.937930580631!2d72.8155265131024!3d18.95488528819119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce103e6ec89d%3A0xe9100d13231f6ef6!2sPrasad+Chambers%2C+Tata+Rd+No+2%2C+Opera+House%2C+Girgaon%2C+Mumbai%2C+Maharashtra+400004!5e0!3m2!1sen!2sin!4v1497331853289" 
+                style="width: 100%; height: 100%; border: 0;" 
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+    <br/>
 
+    <!-- Inquiry Section -->
     <section class="contactinquiry">
-        <div class="biudbvf">
+        <div class="container biudbvf">
             <form id="homeinquiryform" method="post">
                 <div class="row">
                     <div class="col-md-4">
@@ -287,23 +392,20 @@
                             <p>Fill Up This Form</p>
                         </div>
                     </div>
-                    <div class="col-md-3 cudsbcdshb_colcdiud skdfhi">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Your Name" name="name">
                         </div>
                     </div>
-                    <div class="col-md-3 skdfhi">
+                    <div class="col-md-3">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Your Email / Phone Number" name="phone">
                         </div>
                     </div>
-                    <div class="col-md-2 skdfhi">
+                    <div class="col-md-2">
                         <div class="form-group">
                             <button class="btn btn-inquiry" type="button" id="huibsghggg_bcudvs">Subscribe</button>
                         </div>
-                    </div>
-                    <div class="col-md-8 text-center skdfhi1">
-                        <p class="errroebcdsgsd h3"></p>
                     </div>
                 </div>
             </form>

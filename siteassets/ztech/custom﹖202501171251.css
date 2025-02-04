@@ -2344,14 +2344,18 @@ body,
 }
 
 .breadcrumbmine {
-    background: url("img/breadcrumb4.jpg");
-    background-size: cover;
+    background: url("img/Screenshot\ 2025-01-31\ at\ 3.04.15\ PM.png");
+    background-size: 190px 210px; /* Adjust the width and height */
     background-repeat: no-repeat;
-    height: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     position: relative;
+    margin-right: 20px; /* Adjust the value as needed */
 }
+
+
+
 
 .breadcrumbmine .breadcrumb li {
     padding: 0 !important;
@@ -3323,7 +3327,7 @@ ul.unorder-list>li{
 }
 
 .cardofcontact ul li span {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .contactcardsec {

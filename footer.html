@@ -8,22 +8,19 @@
     <script src="siteassets/js/jquery.elevatezoom.js"></script>
 
     <style>
-        /* Global Font Settings */
-        * {
-            font-family: Arial, sans-serif;
-            font-size: 16px; /* Uniform font size across all pages */
-        }
-
+        /* Global Styles */
         body {
             margin: 0;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
         }
 
+        /* Footer Styling */
         footer {
-            background: #7fd5f9;
-            color: #fff;
+            background: rgb(34, 77, 94); /* Footer background color */
             padding: 20px;
             text-align: center;
             margin-top: auto;
@@ -36,8 +33,9 @@
         }
 
         h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
+            font-size: 30px;
+            color: #abcff5; /* Blue color for headings */
+            font-weight: bold;
         }
 
         ul {
@@ -50,9 +48,26 @@
         }
 
         ul li a {
-            color: #fff;
             text-decoration: none;
-            font-size: 16px; /* Ensure same font size */
+            font-size: 22px;
+            color: white; /* Default white color */
+            transition: color 0.3s ease;
+        }
+
+        /* When user clicks the link, color will turn blue */
+        ul li a:active, 
+        ul li a:focus {
+            color: #007bff !important;
+        }
+
+        /* When the link is visited, it will stay blue */
+        ul li a:visited {
+            color: white;
+        }
+
+        /* Highlight the link on hover */
+        ul li a:hover {
+            color: #007bff;
         }
 
         .social-icons a img {
@@ -60,68 +75,51 @@
             margin: 5px;
         }
 
-        /* Full-width Copyright Bar */
+        /* Copyright Bar */
         .copyright-container {
             width: 100%;
-            height: 60px;
-            font-size: 15px;
-            background-color: #111;
-            color: #fff;
+            height: 100px;
+            font-size: 19px;
+            background-color: rgb(12, 3, 5);
+            color: white;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .side-menu a {
-            color: #fff !important;
-            font-size: 16px;
-        }
-
-        .cap1 {
-            text-transform: uppercase !important;
-            font-size: 16px;
-        }
-
+        /* Responsive Design */
         @media only screen and (max-width: 600px) {
             .footer-content {
                 flex-direction: column;
                 text-align: center;
             }
         }
-
-        a.iLink {
-            font-weight: bold !important;
-            text-decoration: underline !important;
-        }
-
-        .iLink:hover {
-            text-decoration: none !important;
-        }
-
     </style>
 
 </head>
 <body>
+
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="quick-links">
+                <!-- Quick Links -->
+                <div>
                     <h2>Quick Links</h2>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="index.html" class="home-link">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="faq.html">FAQ's</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
 
-                <div class="get-in-touch">
+                <!-- Get In Touch -->
+                <div>
                     <h2>Get In Touch</h2>
                     <ul>
-                        <li><a href="tel:+912240309999">+91 6622358370</a></li>
                         <li><a href="tel:+919326361716">+66-86-883-7700</a></li>
+                        <li><a href="tel:+912240309999">+91 6622358370</a></li>
                         <li><a href="mailto:abcd@tejanidiam.com">abcd@tejanidiam.com</a></li>
                     </ul>
                     <div class="social-icons">
@@ -135,6 +133,13 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
                         </a>
                     </div>
+                    <div class="ccw_plugin chatbot c12">
+                        <div class="ccw_style9 animated no-animation ccw-no-hover-an">
+                          <a target="_blank" href="https://api.whatsapp.com/send?phone=6622358370&amp;text=I%20am%20interested%20in%20your%20service%20contact%20me." class="img-icon-a nofocus" rel="noreferrer" title="whatsapp">
+                            <img class="img-icon ccw-analytics" id="style-9" data-ccw="style-9" style="height: 50px;" src="siteassets/ztech/img/whatsapp.svg" alt="WhatsApp chat" draggable="false">
+                          </a>
+                        </div>
+                      </div>                      
                 </div>
             </div>
         </div>
@@ -142,7 +147,10 @@
 
     <!-- Copyright Bar -->
     <div class="copyright-container">
-        <p class="copyright">Copyright© <span id="current-year"></span> Tejani Diam (Thailand) All Rights Reserved</p>
+        <p class="copyright-bottom">
+            Copyright©️<span id="current-year"></span> <span class="fw-700">Tejani Diam</span> (Thailand) All Rights Reserved
+            Design and Development by Ark Intelligence Pvt. Ltd.
+        </p>    
     </div>
 
     <script>
