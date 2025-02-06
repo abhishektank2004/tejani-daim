@@ -8,6 +8,7 @@
     <script src="siteassets/js/jquery.elevatezoom.js"></script>
 
     <style>
+
         /* Global Styles */
         body {
             margin: 0;
@@ -15,7 +16,7 @@
             display: flex;
             flex-direction: column;
             font-family: Arial, sans-serif;
-            font-size: 16px;
+            font-size: 17px;
         }
 
         /* Footer Styling */
@@ -33,7 +34,7 @@
         }
 
         h2 {
-            font-size: 30px;
+            font-size: 20px;
             color: #abcff5;
             font-weight: bold;
         }
@@ -49,7 +50,7 @@
 
         ul li a {
             text-decoration: none;
-            font-size: 22px;
+            font-size: 17px;
             color: white;
             transition: color 0.3s ease;
         }
@@ -70,7 +71,7 @@
         .copyright-container {
             width: 100%;
             height: 100px;
-            font-size: 19px;
+            font-size: 17px;
             background-color: rgb(12, 3, 5);
             color: white;
             text-align: center;
@@ -86,6 +87,65 @@
                 text-align: center;
             }
         }
+        .footer-container {
+          background-color: rgb(34, 69, 83); /* Preferred background color */
+          padding: 15px 0;
+          font-size: 17px;
+          color: #ffffff; /* Text color */
+        }
+      
+        .footer-container .container {
+          display: flex;
+          justify-content: space-between; /* Left and right alignment */
+          align-items: center;
+        }
+      
+        .footer-container p {
+          margin: 0;
+          flex: 1; /* Allow equal space for left and right sections */
+        }
+      
+        /* For small screens (phone view) */
+        @media (max-width: 768px) {
+          .footer-container .container {
+            flex-direction: column; /* Stack items vertically */
+          }
+      
+          .footer-container p {
+            text-align: center; /* Center text for smaller screens */
+            margin-bottom: 8px;
+          }
+        }
+
+        .footer-container {
+            background-color: rgb(34, 69, 83); /* Preferred background color */
+            padding: 15px 0;
+            font-size: 17px;
+            color: #ffffff; /* Text color */
+          }
+        
+          .footer-container .container {
+            display: flex;
+            justify-content: space-between; /* Left and right alignment */
+            align-items: center;
+          }
+        
+          .footer-container p {
+            margin: 0;
+            flex: 1; /* Allow equal space for left and right sections */
+          }
+        
+          /* For small screens (phone view) */
+          @media (max-width: 768px) {
+            .footer-container .container {
+              flex-direction: column; /* Stack items vertically */
+            }
+        
+            .footer-container p {
+              text-align: center; /* Center text for smaller screens */
+              margin-bottom: 8px;
+            }
+          }
     </style>
 
 </head>
@@ -128,28 +188,31 @@
                     <!-- WhatsApp Button -->
                     <div class="ccw_plugin chatbot c12">
                         <div class="ccw_style9 animated no-animation ccw-no-hover-an">
-                          <!-- <a target="_blank" href="https://api.whatsapp.com/send?phone=916622358370&text=I%20am%20interested%20in%20your%20service%20contact%20me." class="img-icon-a nofocus" rel="noreferrer" title="whatsapp">
+                          <a target="_blank" href="https://api.whatsapp.com/send?phone=916622358370&text=I%20am%20interested%20in%20your%20service%20contact%20me." class="img-icon-a nofocus" rel="noreferrer" title="whatsapp">
                             <img class="img-icon ccw-analytics" id="style-9" style="height: 50px;" src="siteassets/ztech/img/whatsapp.svg" alt="WhatsApp chat" draggable="false">
-                          </a> -->
+                          </a>
                         </div>
                     </div>                      
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Copyright Bar -->
-    <div class="copyright-container">
-        <p class="copyright-bottom">
-            Copyright©️<span id="current-year"></span> <span class="fw-700">Tejani Diam</span> (Thailand) All Rights Reserved
-            Design and Development by Ark Intelligence Pvt. Ltd.
-        </p>    
-    </div>
-
-    <script>
+    <div class="footer-container">
+        <div class="container d-flex justify-content-between align-items-center text-center flex-wrap">
+          <p class="mb-1 left-text">
+            Copyright©️<span id="current-year"></span> 
+            <span class="fw-700">Tejani Diam</span> (Thailand) All Rights Reserved
+          </p>
+          <p class="mb-1 right-text">
+            Design & Developed by <span class="fw-700">Ark Intelligence Pvt. Ltd.</span>
+          </p>
+        </div>
+      </div>
+      
+      <script>
         // Auto Update Year
         document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+      </script>      
 
 </body>
 </html>
